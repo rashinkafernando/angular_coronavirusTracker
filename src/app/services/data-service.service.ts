@@ -13,7 +13,16 @@ export class DataServiceService {
   getGlobalData(){
     return this.http.get(this.gloabelDataUrl, {responseType : 'text'}).pipe(
       map(result => {
-        
+
+        let rows = result.split('\n');
+        //console.log(rows);
+
+        rows.forEach(row => {
+          let cols = row.split(/,(?=\S)/)
+          console.log(cols);
+        }
+        )
+        return [];
       }) 
     )
   }
