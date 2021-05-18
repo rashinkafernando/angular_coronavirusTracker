@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 //Add data service to make API calls
 import { DataService } from '../app/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
