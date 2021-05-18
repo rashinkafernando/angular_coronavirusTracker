@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { DataService } from '../app/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CountriesComponent } from './components/countries/countries.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
