@@ -11,7 +11,7 @@ export class DataServiceService {
   constructor(private http : HttpClient) { }
 
   getGlobalData(){
-    return this.http.get(this.gloabelDataUrl).pipe(
+    return this.http.get(this.gloabelDataUrl, {responseType : 'text'}).pipe(
       map(result => {
         
       }) 
