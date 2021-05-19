@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalDataSummary } from 'src/app/models/globalData';
-import { DataServiceService } from 'src/app/services/data-service.service';
+import { DataServiceService } from 'src/app/services/data-service.service'; //importing data service
+import { Ng2GoogleChartsModule, GoogleChartsSettings } from 'ng2-google-charts'; //import google charts
+
 
 @Component({
   selector: 'app-home',
