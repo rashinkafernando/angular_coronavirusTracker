@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
       chartType: 'PieChart',
       dataTable: datatable,
       options: {
-        height: 500
+        height: 400
       },
     };
 
