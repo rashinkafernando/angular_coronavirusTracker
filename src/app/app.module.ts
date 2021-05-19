@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 //Add data service to make API calls
 import { DataService } from '../app/data.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,7 +23,8 @@ import { DashboardCardComponent } from './components/dashboard-card/dashboard-ca
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2GoogleChartsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalDataSummary } from 'src/app/models/globalData';
 import { DataServiceService } from 'src/app/services/data-service.service'; //importing data service
-import { Ng2GoogleChartsModule, GoogleChartsSettings } from 'ng2-google-charts'; //import google charts
+import { Ng2GoogleChartsModule } from 'ng2-google-charts'; //import google charts
 
 
 @Component({
