@@ -11,6 +11,12 @@ export class CountriesComponent implements OnInit {
 
   data : GlobalDataSummary[] ;
   countries : string[] = []; //empty string array
+
+  totalConfirmed = 0;
+  totalActive = 0;
+  totalDeaths = 0;
+  totalRecovered = 0;
+
   constructor(private service : DataServiceService) { }
 
   ngOnInit(): void {
@@ -23,4 +29,16 @@ export class CountriesComponent implements OnInit {
     })
   }
 
+  updateValues(country: string)
+  {
+    console.log(country);
+    this.data.forEach(cs =>{
+      if(cs.country == country){
+        this.totalActive = cs.active
+        this.totalConfirmed = cs.confirmed
+        this.totalDeaths = cs.deaths
+        this.totalRecovered = cs.recovered
+      }
+    })
+  }
 }
